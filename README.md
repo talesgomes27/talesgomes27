@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Tales Gomes</h1>
-<h3 align="center">A passionate Data Science from Brazil</h3>
+<h3 align="center">A passionate Data Scientist from Brazil</h3>
 
 - 🌱 I’m currently learning **Data Science at DataScienceAcademy and DataCamp**
 
