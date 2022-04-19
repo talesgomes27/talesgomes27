@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **Data Science at DataScienceAcademy and DataCamp**
 
-- 👨‍💻 All of my projects are available at [https://talesgomes27_portifolio.netlify.app/](https://talesgomes27_portifolio.netlify.app/)
+- 👨‍💻 All of my projects are available at [https://talesgomes.netlify.app/](https://talesgomes.netlify.app/)
 
 - 📝 I regularly write articles on [https://blogdotales.netlify.app/](https://blogdotales.netlify.app/)
 
