@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **talesgomes27@gmail.com**
 
-- 📄 Know about my experiences [in my curriculum](https://rawcdn.githack.com/talesgomes27/curriculo/1428dec4b914920bfae2ab06d8dc09492e8a5948/curriculo/curriculo.pdf)
+- 📄 Know about my experiences [on my resume](https://rawcdn.githack.com/talesgomes27/curriculo/1428dec4b914920bfae2ab06d8dc09492e8a5948/curriculo/curriculo.pdf)
 
 - ⚡ Fun fact **I love Pará cuisine, anime, science fiction and martial arts.**
 
