@@ -5,7 +5,7 @@
 
 - 👨‍💻 All of my projects are available at [https://talesgomes.netlify.app/](https://talesgomes.netlify.app/)
 
-- 📝 I regularly write articles on [https://blogdotales.netlify.app/](https://blogdotales.netlify.app/)
+- 📝 I regularly write articles on [https://talesgomes.netlify.app/](https://talesgomes.netlify.app/)
 
 - 💬 Ask me about **rstats, python, sql, and general data sicence/analysis**
 
