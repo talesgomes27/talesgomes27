@@ -19,6 +19,15 @@ Case study based on Chicago's Divvy bike-sharing data, structuring data-driven m
 
 ---
 
+### 🚕 [NYC Taxi Trip Duration: Geospatial Engineering & Gradient Boosting](https://github.com/talesgomes27/improve_traffic)
+Predictive pipeline estimating urban transit durations across New York City by coupling historical taxi dispatch records with daily meteorological observations.
+
+* **Methodology & Modeling**: Geodesic and Manhattan grid feature engineering (Haversine, orthogonal distances, bearing angles, airport access flags). Analysis of severe weather deceleration effects. Outlier treatment and log-transformed target optimization ($\text{RMSLE}$). Temporal validation split benchmarking tree ensembles, where a tuned LightGBM model achieved an $\text{RMSLE}$ of 0.3397 ($\text{MAE}$ of 3.25 min, $R^2 = 0.7934$). Complete with a modular Python pipeline, Makefile automation, and automated unit tests.
+* **Tech Stack**: `Python`, `LightGBM`, `XGBoost`, `scikit-learn`, `pandas`, `Quarto`, `Makefile`
+* **Artifacts**: [Published Report (GitHub Pages)](https://talesgomes27.github.io/improve_traffic/) · [Source Code](https://github.com/talesgomes27/improve_traffic)
+
+---
+
 ### ☄️ [NASA Fireballs: Bolide Impacts & Atmospheric Energy Analysis](https://github.com/talesgomes27/nasa_fireball)
 Interactive application analyzing bolide and meteor impact events recorded by the NASA/JPL CNEOS sensor network.
 
@@ -30,9 +39,9 @@ Interactive application analyzing bolide and meteor impact events recorded by th
 
 ## Technical Toolkit
 
-* **Statistical Analysis & Modeling**: R (tidyverse, ggplot2), Python (pandas, scikit-learn), SQL (PostgreSQL, SQLite), Quarto.
+* **Statistical Analysis & Machine Learning**: Python (pandas, scikit-learn, LightGBM), R (tidyverse, ggplot2), SQL (PostgreSQL, SQLite), Quarto.
 * **Interactive Tools & Interfaces**: R Shiny, bslib (Bootstrap 5), Plotly, reactable, Shinylive (WebAssembly).
-* **Environment & Tooling**: Git, GitHub Actions, Linux / Bash, Docker foundations.
+* **Environment & Tooling**: Git, GitHub Actions, Linux / Bash, Makefile, Docker foundations.
 
 ## Engineering Standards
 
