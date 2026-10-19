@@ -10,6 +10,15 @@ I work with exploratory data analysis, statistical modeling, and data applicatio
 
 ## Featured Projects
 
+### 🛍️ [E-Commerce Sales & Customer Analytics: What-If Simulator & Margin Intelligence](https://github.com/talesgomes27/ecommerce_sales_customer_analytics)
+Revenue intelligence platform and commercial scenario simulator analyzing 138,116 transactions ($177M GMV) to identify margin destruction thresholds and optimize pricing strategies.
+
+* **Methodology & Modeling**: Clean Architecture separating the core business calculation engine (`Pydantic v2`, `Polars`) from UI frameworks. Break-even analysis mapping the critical 35% discount threshold where volume growth turns into cash destruction ($201k in deficit orders). Out-of-time temporal validation preventing lookahead bias. RFM customer segmentation (K-Means) and conversion propensity modeling (`LightGBM`, `XGBoost`) with cost-sensitive threshold calibration ($\tau^* = 0.55$). Interactive What-If simulation engine with on-the-fly executive PDF export via Typst (<0.1s).
+* **Tech Stack**: `Python`, `uv`, `Polars`, `LightGBM`, `XGBoost`, `Streamlit`, `Pydantic v2`, `Typst`, `Quarto`, `pytest` (50 tests)
+* **Artifacts**: [Live Simulator (Streamlit)](https://ecommerce-sales-customer-analytics.streamlit.app/) · [Published Report (GitHub Pages)](https://talesgomes27.github.io/ecommerce_sales_customer_analytics/) · [Source Code](https://github.com/talesgomes27/ecommerce_sales_customer_analytics)
+
+---
+
 ### 📈 [YouTube Virality: Dual Modeling, Simpson's Paradox & Audience Deconfounding](https://github.com/talesgomes27/youtube_viral_video_prediction)
 End-to-end analytical and machine learning pipeline on 12,000 YouTube videos across 15 editorial categories, isolating channel scale inertia from actionable creator levers.
 
@@ -66,12 +75,13 @@ Governance framework and operational protocols orchestrating AI coding agents ac
 
 ## Technical Toolkit
 
-* **Statistical Analysis & Machine Learning**: Python (pandas, scikit-learn, LightGBM, XGBoost, SHAP), R (tidyverse, ggplot2), SQL (PostgreSQL, SQLite), Quarto.
-* **Interactive Tools & Interfaces**: R Shiny, bslib (Bootstrap 5), Plotly, reactable, Shinylive (WebAssembly).
-* **Environment & Tooling**: `uv`, Git, GitHub Actions, Linux / Bash, Makefile, Docker foundations.
+* **Statistical Analysis & Machine Learning**: Python (Polars, pandas, scikit-learn, LightGBM, XGBoost, SHAP), R (tidyverse, ggplot2), SQL (PostgreSQL, SQLite), Quarto.
+* **Interactive Apps & Dashboards**: Streamlit, R Shiny, bslib (Bootstrap 5), Plotly, reactable, Shinylive (WebAssembly).
+* **Architecture & Tooling**: Pydantic v2, Typst, `uv`, Git, GitHub Actions, Linux / Bash, Makefile, Docker foundations.
 
 ## Engineering Standards
 
-* **Reproducibility**: Parameterized pipelines, deterministic random seeds, and frozen Quarto execution caches (`freeze: auto`).
-* **Data Contracts & Leakage Prevention**: Strict runtime contract assertion (`DC` rules) blocking target and proxy leakage across inference splits.
+* **Clean Architecture & Decoupling**: Business logic and scenario calculation engines isolated from UI frameworks in pure typed modules.
+* **Reproducibility & Temporal Discipline**: Point-in-time Out-of-Time splits preventing lookahead bias, deterministic random seeds, and frozen Quarto caches (`freeze: auto`).
+* **Data Contracts & Leakage Prevention**: Strict runtime schema validation (Pandera, Pydantic) and contract assertions (`DC` rules) blocking target and proxy leakage.
 * **Empirical Validation**: Cost-sensitive financial thresholds, effect sizes, non-parametric checks, and confidence intervals prioritized over raw point estimates.
