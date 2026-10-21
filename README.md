@@ -31,7 +31,7 @@ End-to-end analytical and machine learning pipeline on 12,000 YouTube videos acr
 ### 💳 [Bank Fraud Mitigation: Three-Stage Hurdle Model & Financial Calibration](https://github.com/talesgomes27/credit_card_fraud_detection)
 Modular pipeline processing 100,000 credit card transactions to balance direct loss reduction against legitimate customer friction costs.
 
-* **Methodology & Modeling**: Three-stage Hurdle architecture replacing mono-stage classifiers: binary detection (`is_fraud`) with financial threshold tuning ($C(t) = \sum \text{FN} \cdot \text{Loss} + \$3.50 \cdot \text{FP}$), multiclass fraud typing across 4 attack categories via Macro F1-score, and conditional loss quantification via RMSE/MAE. Behavioral feature engineering covering velocity bursts and transaction ticket deviations, coupled with global and local SHAP explainability.
+* **Methodology & Modeling**: Three-stage Hurdle architecture replacing mono-stage classifiers: binary detection (`is_fraud`) with financial threshold tuning ($C(t) = \sum \text{FN} \cdot \text{Loss} + \$3.50 \cdot \text{FP}$), where an optimal cutoff ($t^* = 0.170$) reduces losses by $>40\%$ over naive 0.50 cuts. Multiclass fraud typing across 4 attack categories via Macro F1-score, and conditional loss quantification via RMSE (\$63.86, $R^2 = 0.929$). Behavioral feature engineering covering velocity bursts and transaction ticket deviations, coupled with global and local SHAP explainability.
 * **Tech Stack**: `Python`, `uv`, `LightGBM`, `scikit-learn`, `SHAP`, `Quarto`, `pytest`, `Ruff`
 * **Artifacts**: [Published Report (GitHub Pages)](https://talesgomes27.github.io/credit_card_fraud_detection/) · [Source Code](https://github.com/talesgomes27/credit_card_fraud_detection)
 
@@ -40,7 +40,7 @@ Modular pipeline processing 100,000 credit card transactions to balance direct l
 ### 🚕 [NYC Taxi Trip Duration: Geospatial Engineering & Gradient Boosting](https://github.com/talesgomes27/improve_traffic)
 Predictive pipeline estimating urban transit durations across New York City by coupling historical taxi dispatch records with daily meteorological observations.
 
-* **Methodology & Modeling**: Geodesic and Manhattan grid feature engineering (Haversine, orthogonal distances, bearing angles, airport access flags). Analysis of severe weather deceleration effects. Outlier treatment and log-transformed target optimization ($\text{RMSLE}$). Temporal validation split benchmarking tree ensembles, where a tuned LightGBM model achieved an $\text{RMSLE}$ of 0.3397 ($\text{MAE}$ of 3.25 min, $R^2 = 0.7934$). Complete with a modular Python pipeline, Makefile automation, and automated unit tests.
+* **Methodology & Modeling**: Geodesic and Manhattan grid feature engineering (Haversine, orthogonal distances, bearing angles, airport access flags). Analysis of severe weather deceleration effects (-24.3% in snow). Outlier treatment and log-transformed target optimization ($\text{RMSLE}$). Temporal validation split benchmarking tree ensembles, where a tuned LightGBM model achieved an $\text{RMSLE}$ of 0.3397 ($\text{MAE}$ of 3.25 min, $R^2 = 0.7934$). Complete with a modular Python pipeline, Makefile automation, and automated unit tests.
 * **Tech Stack**: `Python`, `LightGBM`, `XGBoost`, `scikit-learn`, `pandas`, `Quarto`, `Makefile`
 * **Artifacts**: [Published Report (GitHub Pages)](https://talesgomes27.github.io/improve_traffic/) · [Source Code](https://github.com/talesgomes27/improve_traffic)
 
@@ -64,11 +64,11 @@ Interactive application analyzing bolide and meteor impact events recorded by th
 
 ---
 
-### ⚙️ [Autonomous Agent Meta-Skills: Multi-Gate Pipeline Architecture](https://github.com/talesgomes27/antigravity-meta-skills)
-Governance framework and operational protocols orchestrating AI coding agents across 5-gate deterministic software engineering and data science workflows.
+### ⚙️ [Autonomous Agent Meta-Skills & Quarto Tooling Ecosystem](https://github.com/talesgomes27/antigravity-meta-skills)
+Production-grade governance framework and operational protocols orchestrating AI coding agents across deterministic 5-gate pipelines, integrated with a specialized Quarto publication engine.
 
-* **Architecture & Governance**: Lifecycle pipelines spanning pre-code planning, test-driven execution, technical writing, release ops, and non-destructive legacy audit. Polymorphic dispatch tailored to archetypes: Data Science/Quarto (CRISP-ML(Q) and data storytelling), Web/APIs (DDD and Clean Architecture), and CLI tools.
-* **Tech Stack**: `Markdown`, `Bash`, `Python / uv`, `Quarto`, `Git`
+* **Architecture & Governance**: Lifecycle pipelines spanning pre-code planning, test-driven execution, technical writing, release ops, and non-destructive legacy audit. Polymorphic dispatch tailored to archetypes: Data Science/Quarto (CRISP-ML(Q) and data storytelling), Web/APIs (DDD and Clean Architecture), and CLI tools. Integrated with `quarto-expert` for Typst, LaTeX/ABNT NBR 14724:2024, RevealJS, and headless test validation scripts.
+* **Tech Stack**: `Markdown`, `Bash`, `Python / uv`, `Quarto CLI`, `Typst`, `Git`
 * **Artifacts**: [Source Code & Architecture](https://github.com/talesgomes27/antigravity-meta-skills)
 
 ---
@@ -77,7 +77,7 @@ Governance framework and operational protocols orchestrating AI coding agents ac
 
 * **Statistical Analysis & Machine Learning**: Python (Polars, pandas, scikit-learn, LightGBM, XGBoost, SHAP), R (tidyverse, ggplot2), SQL (PostgreSQL, SQLite), Quarto.
 * **Interactive Apps & Dashboards**: Streamlit, R Shiny, bslib (Bootstrap 5), Plotly, reactable, Shinylive (WebAssembly).
-* **Architecture & Tooling**: Pydantic v2, Typst, `uv`, Git, GitHub Actions, Linux / Bash, Makefile, Docker foundations.
+* **Architecture & Systems Tooling**: Pydantic v2, Typst, `uv`, Git, GitHub Actions, Linux / Bash, Makefile, Docker foundations.
 
 ## Engineering Standards
 
